@@ -4,3 +4,9 @@ from .models import User
 
 
 admin.site.register(User)
+
+from chat.models import Room, Message
+
+admin.site.register(Room)
+
+admin.site.register(Message)

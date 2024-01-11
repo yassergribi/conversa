@@ -43,7 +43,7 @@ CHANNEL_LAYERS = {
 # Application definition
 
 INSTALLED_APPS = [
-    'daphne',
+    "daphne",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,6 +82,8 @@ TEMPLATES = [
         },
     },
 ]
+
+# CORS_ALLOW_CREDENTIALS = True
 
 WSGI_APPLICATION = 'conversa.wsgi.application'
 ASGI_APPLICATION = 'conversa.asgi.application'

@@ -2,4 +2,5 @@
 */*.pyc
 */*/*.pyc
 *node_modules/*
-*.venv/*
+*venv/*
+.gitignore
