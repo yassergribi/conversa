@@ -1,3 +1,4 @@
+from unicodedata import name
 from django.urls import path
 
 from . import views
@@ -5,5 +6,7 @@ from . import views
 app_name = 'chat'
 
 urlpatterns  = [
-    path('api/create-room/<str:uuid>/', views.create_room, name='create-room')
+    path('api/create-room/<str:uuid>/', views.create_room, name='create-room'),
+    path('chat-admin/', views.admin, name="admin"),
+    path('chat-admin/<str:uuid>', views.room, name='room'),
 ]

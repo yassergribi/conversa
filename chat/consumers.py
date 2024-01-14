@@ -35,7 +35,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         print('Receive:', type)
 
         if type == "message":
-            new_message = await self.create_message(name, message, agent)
+            new_message = await  self.create_message(name, message, agent)
 
             # Send message to room
             await self.channel_layer.group_send(
