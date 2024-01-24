@@ -181,3 +181,12 @@ chatSubmitElement.onclick = function(e) {
 
     return false
 }
+
+
+chatInpeutElement.onkeyup = function(e) {
+    // Enter key
+    if (e.keyCode == 13 ) { 
+        sendMessage()
+    }
+
+}
