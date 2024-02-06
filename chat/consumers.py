@@ -64,6 +64,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
             )
         elif type == 'update':
             # Send update to the room
+            print('iz update ...')
             await self.channel_layer.group_send(
                 self.room_group_name, {
                     'type' : 'writing_active',
