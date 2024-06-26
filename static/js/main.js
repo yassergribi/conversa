@@ -67,7 +67,7 @@ function sendMessage() {
 
 function onChatMessage(data) {
     console.log('onChatMessage', data)
-
+   
     if ( data.type == 'chat_message'){
         let tmpInfo = document.querySelector('.tmp-info')
 
@@ -106,9 +106,9 @@ function onChatMessage(data) {
                 `
         }
  
-    } else if (data.type == 'users_update') {
-        chatLogElement.innerHTML += '<p class="mt-2">The admin/agent has joined the chat!'
-    
+    } else if (data.type == 'users_update' ) {
+        chatLogElement.innerHTML += '<p class="mt-2">The admin/agent has joined the chat! </p>'
+       
     } else if (data.type == 'writing_active') {
         if (data.agent) {
             let tmpInfo = document.querySelector('.tmp-info')
